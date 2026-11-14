@@ -4,6 +4,7 @@ public class Partido
 implements Serializable {
 
 private static final long serialVersionUID = 1L;
+// Identificador de version para la serializacion
 
 private Equipo local;
 private Equipo visitante;
@@ -26,6 +27,9 @@ return visitante;
 
 @Override
 public String toString() {
+/* Sobreescribe el metodo toString para mostrar 
+ * los equipos que participan en el partido
+ */
 
 return local + " VS " + visitante;
 }
