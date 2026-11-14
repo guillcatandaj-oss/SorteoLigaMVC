@@ -11,12 +11,19 @@ public class ConsolaVista {
             List<Partido> partidos) {
 
         System.out.println("\n====================");
-        System.out.println(etapa);
+        System.out.println("    " + etapa);
         System.out.println("====================");
+        
+        int contador = 1;
 
         for (Partido p : partidos) {
 
-            System.out.println(p);
+            System.out.println("Partido" +  contador + ": " + p);
+            
+            contador++;
+           
         }
+        
+        System.out.print("==================================");
     }
 }
