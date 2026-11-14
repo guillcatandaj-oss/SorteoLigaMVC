@@ -12,7 +12,7 @@ public class TorneoControlador {
 
     private Torneo torneo;
 
-    public TorneoControlador(Torneo torneo) {
+    public TorneoControlador (Torneo torneo) {
         this.torneo = torneo;
     }
 
@@ -23,13 +23,13 @@ public class TorneoControlador {
         return torneo.sortearEtapa();
     }
 
-    public void guardar(String archivo)
+    public void guardar (String archivo)
             throws IOException {
 
         torneo.guardarTorneo(archivo);
     }
 
-    public void cargar(String archivo)
+    public void cargar (String archivo)
             throws IOException,
                    ClassNotFoundException {
 
