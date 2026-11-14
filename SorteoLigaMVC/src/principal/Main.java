@@ -36,13 +36,16 @@ public class Main {
 		torneo.agregarEquipo(new Equipo("Dortmund"));
 		torneo.agregarEquipo(new Equipo("Arsenal"));
 		
-		TorneoControlador controlador= new TorneoControlador(torneo);
+		// Creacion del controlador MVC
 		
+		TorneoControlador controlador = new TorneoControlador(torneo);
+		
+		//Creacion de la vista
 		ConsolaVista vista = new ConsolaVista();
 		try {
-			List <Partido> octavos = controlador.realizarSorteo();
+			List <Partido> octavos=controlador.realizarSorteo();
 			
-			vista.mostrarPartidos("🏆 Octavos de Final 🏆", octavos);
+			vista.mostrarPartidos("🏆 Octavos de Final 🏆" , octavos);
 		
 			controlador.guardar("torneo.ser");
 			System.out.println("\n Torneo guardado correctamente.");
