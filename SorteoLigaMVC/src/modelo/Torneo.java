@@ -86,7 +86,7 @@ public class Torneo implements Serializable {
         if (equipo1.equals(equipo2)) {
 
             throw new SorteoInvalidoException(
-                    "Un equipo no puede enfrentarse contra sí mismo.");
+                    "Un equipo no puede enfrentarse a sí mismo.");
         }
 
         Partido partido =
