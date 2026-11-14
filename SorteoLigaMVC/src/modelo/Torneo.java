@@ -34,11 +34,12 @@ public class Torneo implements Serializable {
     }
 
     private boolean esPotenciaDeDos(int n) {
+    	// Verifica si la cantidad de equipos es potencia de 2
 
         return n > 0 && (n & (n - 1)) == 0;
     }
 
-    public List<Partido> sortearEtapa()
+    public List<Partido> sortearEtapa() // Realiza el sorteo aleatorio de una etapa del torneo
             throws NumeroEquiposInvalidoException,
             SorteoInvalidoException {
 
@@ -62,11 +63,13 @@ public class Torneo implements Serializable {
     }
 
     private void sorteoRecursivo(
+    // Método recursivo encargado de emparejar equipos
             List<Equipo> equipos,
             List<Partido> partidos)
             throws SorteoInvalidoException {
 
         if (equipos.size() == 0) {
+        // Caso base: ya no hay equipos por emparejar
 
             return;
         }
@@ -92,6 +95,7 @@ public class Torneo implements Serializable {
         partidos.add(partido);
 
         sorteoRecursivo(equipos, partidos);
+        // Llamada al método recursivo para continuar el sorteo
     }
 
     public void guardarTorneo(String archivo)
