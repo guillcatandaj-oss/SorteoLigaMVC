@@ -17,6 +17,8 @@ public class Main {
 		
 		Torneo torneo = new Torneo();
 		
+		// Registro de equipos participantes
+		
 		torneo.agregarEquipo(new Equipo("Richmond"));
 		torneo.agregarEquipo(new Equipo("Ajax"));
 		torneo.agregarEquipo(new Equipo("Chelsea"));
