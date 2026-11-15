@@ -48,7 +48,7 @@ public class Main {
 			vista.mostrarPartidos("🏆 Octavos de Final 🏆" , octavos);
 		
 			controlador.guardar("torneo.ser");
-			System.out.println("\n Torneo guardado correctamente.");
+			System.out.println("\n Torneo guardado correctamente ⚽ ");
 		
 		}
 
