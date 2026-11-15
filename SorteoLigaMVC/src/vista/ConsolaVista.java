@@ -10,9 +10,11 @@ public class ConsolaVista {
             String etapa,
             List<Partido> partidos) {
 
-        System.out.println("\n====================");
+        System.out.println("==================================");
+        System.out.println("       COPA ELITE 2026 ");
+        System.out.println("==================================");
         System.out.println("    " + etapa);
-        System.out.println("====================");
+        System.out.println("==================================");
         
         int contador = 1;
 
